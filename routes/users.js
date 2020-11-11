@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
+router.get('/admins', (req, res, next) => {
+  res.send("Admin users list");
+});
+
 module.exports = router;
